@@ -5,11 +5,11 @@
  * Return: 0
  */
 
-const chessBoard = () => {
+const chessBoard = (x) => {
     let chess = '';
 
-    for (let i = 0; i < 8; i++){
-        for (let j = 0; j < 8; j++){
+    for (let i = 0; i < x; i++){
+        for (let j = 0; j < x; j++){
             if ((i + j) % 2 === 0){
                 chess += ' ';
             }
@@ -22,4 +22,4 @@ const chessBoard = () => {
   console.log(chess);
   return 0;  
 }
-chessBoard();
+chessBoard(6);
