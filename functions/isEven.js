@@ -8,7 +8,12 @@
 
 let isEven = function(N){
     if (N === 0) return true;
-    if (N <= 1) return false;
+    
+    if (N === 1) return false;
+
+    if (N < 0){
+        N = N * -1
+    }
 
     if (N % 2 !== 0){
        N = N - 2 ;
@@ -20,5 +25,5 @@ let isEven = function(N){
 }
 console.log(isEven(50));
 console.log(isEven(75));
-console.log(isEven(-1));
+console.log(isEven(-2));
 console.log(isEven(0));
