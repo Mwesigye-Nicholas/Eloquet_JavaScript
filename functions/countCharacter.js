@@ -23,12 +23,12 @@ const countCharacter = (string, char) => {
     return count;
 }
 
+function countBs(string){
+    return countCharacter(string, 'a');
+}
 
-const  countA = countCharacter('BooBmacBBaaaBB', 'a');
-
-console.log(countA);
+console.log(countBs('BooBmacBBaaaBB'));
 //Expected output -> 4
 
-const countB = countCharacter('BooBmacBBaaaBB', 'B');
-console.log(countB);
+console.log(countCharacter('BooBmacBBaaaBB', 'B'));
 //Expected outPUT -> 6
